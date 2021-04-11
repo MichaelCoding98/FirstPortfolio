@@ -29,8 +29,7 @@ body,
 .footer-corrector,
 .footer,
 .card-body {
-  background: -webkit-gradient(linear, left bottom, left top, from(#18212c), to(#252f2c));
-  background: linear-gradient(0deg, #18212c 0%, #252f2c 100%);
+  background: #171c1b;
   color: #fff;
 }
 

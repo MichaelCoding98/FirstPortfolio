@@ -35,8 +35,6 @@
 		margin-top: 3rem;
 	}
 
-
-
 	.brand {
 		font-size: 5rem;
 	}
@@ -145,14 +143,12 @@
 			display: none;
 		}
 	}
-	.technology-list{
+	.technology-list {
 		width: 90%;
-		.technology-used{
+		.technology-used {
 			margin: 1em;
 		}
 	}
-
-
 }
 @media (max-width: 600px) {
 	.aboutme {
@@ -162,13 +158,11 @@
 				min-height: 340px;
 
 				.content {
-				margin-top: 1em;
+					margin-top: 1em;
 					h2 {
-						
 						margin-bottom: 0.5em;
 					}
 					.btn-main {
-					
 						position: relative;
 						top: -50px;
 						span {
@@ -184,15 +178,16 @@
 	.aboutme {
 		.container-aboutme {
 			.box {
-				min-width: 260px;
-				min-height: 240px;
+				left: 5%;
+				min-width: 240px;
+				min-height: 220px;
 				.content {
 					i {
 						display: none;
 					}
 					h2 {
-						top: 2rem;
-						font-size: 2.5rem;
+						top: 0;
+						font-size: 2rem;
 						margin-bottom: 0.5em;
 					}
 				}
@@ -203,6 +198,12 @@
 			.content-img {
 				width: 110%;
 				height: 110%;
+			}
+			.box:hover {
+				.content-img {
+					width: 115%;
+					height: 115%;
+				}
 			}
 		}
 	}
@@ -234,7 +235,7 @@
 					font-size: 1rem;
 				}
 				i {
-					font-size: .8rem;
+					font-size: 0.8rem;
 				}
 			}
 		}

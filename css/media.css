@@ -160,15 +160,16 @@
 
 @media (max-width: 400px) {
   .aboutme .container-aboutme .box {
-    min-width: 260px;
-    min-height: 240px;
+    left: 5%;
+    min-width: 240px;
+    min-height: 220px;
   }
   .aboutme .container-aboutme .box .content i {
     display: none;
   }
   .aboutme .container-aboutme .box .content h2 {
-    top: 2rem;
-    font-size: 2.5rem;
+    top: 0;
+    font-size: 2rem;
     margin-bottom: 0.5em;
   }
   .aboutme .container-aboutme .box .btn-main {
@@ -178,6 +179,10 @@
   .aboutme .container-aboutme .content-img {
     width: 110%;
     height: 110%;
+  }
+  .aboutme .container-aboutme .box:hover .content-img {
+    width: 115%;
+    height: 115%;
   }
 }
 
@@ -204,7 +209,7 @@
     font-size: 1rem;
   }
   .container-web .card .content i {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 

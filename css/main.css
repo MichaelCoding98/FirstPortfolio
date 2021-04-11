@@ -674,12 +674,12 @@ body,
 
 .footer {
   position: relative;
-  left: -5%;
+  left: -15%;
   bottom: -5%;
   z-index: 5;
   top: 100px;
   bottom: -5%;
-  width: 110%;
+  width: 120%;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;

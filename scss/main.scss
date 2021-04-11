@@ -638,12 +638,12 @@ body,
 
 .footer {
 	position: relative;
-	left: -5%;
+	left: -15%;
 	bottom: -5%;
 	z-index: 5;
 	top: 100px;
 	bottom: -5%;
-	width: 110%;
+	width: 120%;
 	height: 100px;
 	display: flex;
 	justify-content: center;
@@ -654,7 +654,7 @@ body,
 		rgb(128, 145, 161) 25%,
 		rgb(102, 131, 136) 60%
 	);
-	filter: url(#wavy);
+	filter: url(#wavy);	
 }
 .footer-corrector {
 	position: relative;
