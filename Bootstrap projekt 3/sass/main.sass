@@ -1,0 +1,194 @@
+* 
+    margin: 0 
+    padding: 0
+    box-sizing: border-box
+html 
+    font-size: 62.5% 
+body 
+    font-family: 'Montserrat', sans-serif
+    font-size: 1.6rem
+    background-color: #181D23
+    height: 200vh
+main 
+    display: flex 
+    justify-content: center 
+    align-items: center
+    height: 100vh
+
+.panel 
+    position: relative
+    height: 1000px 
+    width: 1600px
+    background: #000
+    border-radius: 15px
+    border: 1px solid #aaaaaa7f
+    a
+        text-decoration: none
+
+    .fas,.far 
+        font-size: 50px
+    .border  
+        padding-top: 30px
+.active 
+    background-color: rgba(255, 255, 255, .2)
+
+// PANEL LEFT  
+
+.panel-left  
+    display: flex 
+    z-index: 2
+    flex-direction: column
+    text-align: center 
+    height: 100%
+    background-color: #4B5769 
+    border-top-left-radius: 15px
+    border-bottom-left-radius: 15px
+.menu-item 
+    border-radius: 10px 
+    text-transform: uppercase
+    cursor: pointer
+    margin-top: 30px
+    color: #fff
+    p
+        padding-top: 40px
+    i 
+        padding-top: 20px
+   
+.menu-item:hover,.featured-post:hover 
+    background-image: linear-gradient(160deg, rgba(0, 110, 255, .25) 0%, rgba(9, 255, 0, 0.25) 100%)
+
+
+// PANEL RIGHT    
+    
+.panel-right
+    position: absolute 
+    height: 100%
+    background-image: linear-gradient(180deg, rgba(55, 64, 76, 1) 0%, rgba(21, 26, 32, 1) 100%)
+    border-top-right-radius: 15px
+    border-bottom-right-radius: 15px
+.main-stats
+    h1 
+        font-size: 3rem 
+        text-transform: uppercase 
+        font-weight: bold
+.main-stats-box 
+    height: 140px
+    border-radius: 15px 
+    transition: background 0.5s
+    h3 
+        font-size: 1.8rem 
+        margin-bottom: 1em
+        text-transform: uppercase
+        font-weight: bold
+    p 
+        1.2rem
+.main-stats-box:hover
+    background-color: rgba(255,255,255,.08)
+.main-table 
+    tbody 
+        font-size: 1.2rem
+    thead 
+        font-size: 1.4rem
+    .table-dark
+        background-color: transparent
+    h3 
+        font-size: 2.6rem
+        font-weight: bold
+    .btn 
+        font-size: 1.6rem
+    .dropdown-item
+        font-size: 1.2rem
+.page-link 
+    padding: 0.5em 1em
+    font-size: 1.4rem 
+    background-color: transparent 
+    color: #fff
+    transition: color .3s, background 0.3s
+.page-link:hover 
+    background-color: rgba(255,255,255,.08)
+    color: #ddd
+.right-platform
+    .icon-man 
+        text-shadow: 0 0  10px lime
+    .icon-woman
+        text-shadow: 0 0  10px blue
+    .arrow-list
+        margin-right: 160px
+
+
+// POSTY
+
+.info-top
+    p 
+        font-size: 1.6rem
+.posts
+    h3
+        font-size: 2.3rem
+        text-transform: uppercase
+        font-weight: bold
+.featured-post
+    .btn
+        font-size: 1.6rem
+    .card-body 
+        font-size: 1.4rem
+    .card-title 
+        font-size: 1.8rem
+.post-user
+    .btn 
+        font-size: 1.4rem
+    img 
+        opacity: 0.5
+        height: 200px 
+        width: 340px
+        object-fit: cover
+        transition: opacity .4s, transform .4s
+    .user-img 
+        overflow: hidden
+    img:hover 
+        opacity: 1
+        transform: scale(120%)
+.find-post input,.btn, .dropdown-item
+    font-size: 1.6rem
+
+.posts-modal
+    h3
+        font-size: 1.6rem 
+        font-weight: bold
+    p 
+        font-size: 1.3rem 
+    .btn 
+        font-size: 1.3rem 
+    .modal-body
+        .btn 
+            text-transform: uppercase
+// USER
+.users-search 
+    input 
+        height: 30px
+        font-size: 1.8rem
+    .fa-gem 
+        font-size: 35px 
+    h3 
+        font-size: 3rem
+
+.fa-gem
+    text-shadow: 0 0 7px #fff
+.users 
+    .list-group-item
+        padding: 0.5em 1em
+        border: 1px solid #fff
+        margin-top: 10px
+    .list-group-item:hover 
+        background-image: linear-gradient(160deg, rgba(0, 110, 255, .25) 0%, rgba(9, 255, 0, 0.25) 100%)
+        cursor: pointer
+.user-modal
+    .modal-body
+        height: 550px
+    .form-group 
+        padding: 0.5rem
+    h3 
+        padding: 15px
+        font-size: 2.5rem
+    .form-control
+        height: 35px
+        font-size: 1.5rem

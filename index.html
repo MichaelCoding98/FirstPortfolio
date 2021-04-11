@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>~Michael Rabti Portfolio~</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<script
+			src="https://kit.fontawesome.com/6de0f27e56.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./css/nav.css" />
+		<link rel="stylesheet" href="./css/burger.css" />
+		<link rel="stylesheet" href="./css/animate_components.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/media.css" />
+		<link rel="stylesheet" class="light-main" href="./css/light_main.css" />
+	</head>
+	<body>
+
+		<header>
+			<button
+				class="hamburger hamburger--emphatic menu-toggle"
+				id="hamburger"
+				type="button"
+			>
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<div class="overlay"></div>
+			<div class="container-nav">
+				<nav>
+					<ul>
+						<li><div class="slider-toggle"><div class="light-dark"><i class="far fa-lightbulb"></i></div></div></li>
+						
+						<li><a href="./html/about_me.html">O Mnie</a></li>
+						<li><a href="./html/courses.html">Kursy</a></li>
+						<li><a  href="./html/websites.html">Projekty</a></li>
+						<a class="lang-change" href="./html/index_en.html"
+					><img
+						src="./img/united-kingdom.png"
+						alt="flaga Wielkiej Brytanii"
+				/></a>
+					</ul>
+				</nav>
+			</div>
+			<div class="face-bgc">
+				<i class="fas fa-smile-beam"></i>
+				<i class="fas fa-smile-wink"></i>
+				<i class="fas fa-grin-wink"></i>
+				<i class="fas fa-grin-stars"></i>
+				<i class="far fa-grin-beam"></i>
+				<i class="far fa-grin-stars"></i>
+			
+			</div>
+		</header>
+		<main>
+			<h2 class="section-tag">Witam Cię w moim Portfolio 😎🙃 </h2>
+			<p class="section-info">Cześć zapraszam cię do obejrzenia mojego portfolio,😊 mam nadzeję że ci się spodoba, chociaż nie jest to piękne portfolio, to chciałem głównie umieścić tutaj swoje doświadczenia, ukończone kursy 📒 oraz zrobione strony internetowe, tak abyś miał jak najlepszą wiedzę, by ocenić moje umiejętności jako przyszłego junior front-endowca👨‍💻 dziękuję i miłego oglądania..</p>
+			<section class="aboutme">
+				<div class="container-aboutme">
+					<img src="./img/Profilowe.png" alt="Zdjęcie Profilowe" />
+					<div class="box">
+						<div class="content">
+							<h2>O MNIE</h2>
+							<i>
+								Cześć, nazywam się Michael Rabti mam 22 lata i jestem początkującym junior-web-developerem, mam nadzję, że moja praca ci się spodoba.
+							</i>
+							<br />
+							<br />
+							<i>
+								Jeśli chcesz się dowiedzieć o mnie więcej, zachęcam cię do odwiedzenia zakładki "O Mnie" lub kliknięcia w przycisk poniżej... 😊
+							</i>
+						
+							<a href="./html/about_me.html">	<button  class="custom-btn btn-main btn-12"><span>Informacja..</span><span>Cała..</span>
+							</button>
+						</a>						
+						</div>
+						<div class="content-img"></div>
+					</div>
+				</div>
+
+				<svg>
+					<filter id="vavy">
+						<feTurbulence
+							x="0"
+							y="0"
+							baseFrequency="0.02"
+							numOctaves="5"
+							seed="2"
+						>
+							<animate
+								attributeName="baseFrequency"
+								dur="100s"
+								values="0.05;0.01;0.05"
+								repeatCount="indefinite"
+							></animate>
+						</feTurbulence>
+						<feDisplacementMap
+							in="SourceGraphic"
+							scale="30"
+						></feDisplacementMap>
+					</filter>
+				</svg>
+			</section>
+		</main>
+
+		<div class="footer"></div>
+		<svg>
+			<filter id="wavy">
+				<feTurbulence x="0" y="0" baseFrequency="0.01" numOctaves="5" seed="2">
+					<animate
+						attributeName="baseFrequency"
+						dur="75s"
+						values="0.05;0.01;0.05"
+						repeatCount="indefinite"
+					></animate>
+				</feTurbulence>
+				<feDisplacementMap in="SourceGraphic" scale="30"></feDisplacementMap>
+			</filter>
+		</svg>
+
+		<div class="footer-corrector">
+			<div class="contact">
+				<div>
+					<h3>Kontakt</h3>
+					<ul>
+						<li>Numer Telefonu: 690-360-164</li>
+						<li>Email: MichaelRabti@wp.pl</li>
+					</ul>
+				</div>
+				<div class="footer-link">
+					<h3>Znajdzesz mnie również</h3>
+					<ul>
+						<li>
+							<a
+								target="_blank"
+								class="fb"
+								href="https://www.facebook.com/michael.rabti/"
+								><i class="fab fa-facebook-square"></i
+							></a>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								class="git"
+								href="https://github.com/MichaelCoding98"
+								><i class="fab fa-github"></i></a>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								class="linkedin"
+								href="https://www.linkedin.com/in/michael-rabti-50802b20b/"
+								><i class="fab fa-linkedin"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="tech-footer">
+					<h3>Technologie których się uczę</h3>
+					<span><i class="fab fa-html5"></i></span>
+					<span><i class="fab fa-css3-alt"></i></span>
+					<span><i class="fab fa-sass"></i></span>
+					<span><i class="fab fa-js-square"></i></span>
+					<span><i class="fab fa-react"></i></span>
+					<span><i class="fab fa-node"></i></span>
+					<span><i class="fab fa-github"></i></span>
+					<span><i class="fab fa-bootstrap"></i></span>
+					<span><i class="fas fa-photo-video"></i></i></span>
+				</div>
+				
+			</div>
+			<div>			
+				<p>
+					&copy;  Portfolio Autor
+					<i>~Michael Rabti</i>
+					<span class="year"></span>
+				</p>
+			</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./javascript/vanilla-tilt.js"></script>
+
+		<script src="./javascript/main.js"></script>
+		<script>
+			VanillaTilt.init(document.querySelectorAll('.box'), {
+				max: 25,
+				speed: 400,
+			});
+		</script>	 
+	</body>
+</html>

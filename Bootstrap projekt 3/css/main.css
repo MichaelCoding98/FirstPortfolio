@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  background-color: #181D23;
+  height: 200vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.panel {
+  position: relative;
+  height: 1000px;
+  width: 1600px;
+  background: #000;
+  border-radius: 15px;
+  border: 1px solid #aaaaaa7f;
+}
+
+.panel a {
+  text-decoration: none;
+}
+
+.panel .fas, .panel .far {
+  font-size: 50px;
+}
+
+.panel .border {
+  padding-top: 30px;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.panel-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 100%;
+  background-color: #4B5769;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.menu-item {
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.menu-item p {
+  padding-top: 40px;
+}
+
+.menu-item i {
+  padding-top: 20px;
+}
+
+.menu-item:hover, .featured-post:hover {
+  background-image: linear-gradient(160deg, rgba(0, 110, 255, 0.25) 0%, rgba(9, 255, 0, 0.25) 100%);
+}
+
+.panel-right {
+  position: absolute;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#37404c), to(#151a20));
+  background-image: linear-gradient(180deg, #37404c 0%, #151a20 100%);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.main-stats h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-stats-box {
+  height: 140px;
+  border-radius: 15px;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.main-stats-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-stats-box:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.main-table tbody {
+  font-size: 1.2rem;
+}
+
+.main-table thead {
+  font-size: 1.4rem;
+}
+
+.main-table .table-dark {
+  background-color: transparent;
+}
+
+.main-table h3 {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.main-table .btn {
+  font-size: 1.6rem;
+}
+
+.main-table .dropdown-item {
+  font-size: 1.2rem;
+}
+
+.page-link {
+  padding: 0.5em 1em;
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: #fff;
+  -webkit-transition: color .3s, background 0.3s;
+  transition: color .3s, background 0.3s;
+}
+
+.page-link:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ddd;
+}
+
+.right-platform .icon-man {
+  text-shadow: 0 0  10px lime;
+}
+
+.right-platform .icon-woman {
+  text-shadow: 0 0  10px blue;
+}
+
+.right-platform .arrow-list {
+  margin-right: 160px;
+}
+
+.info-top p {
+  font-size: 1.6rem;
+}
+
+.posts h3 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.featured-post .btn {
+  font-size: 1.6rem;
+}
+
+.featured-post .card-body {
+  font-size: 1.4rem;
+}
+
+.featured-post .card-title {
+  font-size: 1.8rem;
+}
+
+.post-user .btn {
+  font-size: 1.4rem;
+}
+
+.post-user img {
+  opacity: 0.5;
+  height: 200px;
+  width: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: opacity .4s, -webkit-transform .4s;
+  transition: opacity .4s, -webkit-transform .4s;
+  transition: opacity .4s, transform .4s;
+  transition: opacity .4s, transform .4s, -webkit-transform .4s;
+}
+
+.post-user .user-img {
+  overflow: hidden;
+}
+
+.post-user img:hover {
+  opacity: 1;
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+}
+
+.find-post input, .btn, .dropdown-item {
+  font-size: 1.6rem;
+}
+
+.posts-modal h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.posts-modal p {
+  font-size: 1.3rem;
+}
+
+.posts-modal .btn {
+  font-size: 1.3rem;
+}
+
+.posts-modal .modal-body .btn {
+  text-transform: uppercase;
+}
+
+.users-search input {
+  height: 30px;
+  font-size: 1.8rem;
+}
+
+.users-search .fa-gem {
+  font-size: 35px;
+}
+
+.users-search h3 {
+  font-size: 3rem;
+}
+
+.fa-gem {
+  text-shadow: 0 0 7px #fff;
+}
+
+.users .list-group-item {
+  padding: 0.5em 1em;
+  border: 1px solid #fff;
+  margin-top: 10px;
+}
+
+.users .list-group-item:hover {
+  background-image: linear-gradient(160deg, rgba(0, 110, 255, 0.25) 0%, rgba(9, 255, 0, 0.25) 100%);
+  cursor: pointer;
+}
+
+.user-modal .modal-body {
+  height: 550px;
+}
+
+.user-modal .form-group {
+  padding: 0.5rem;
+}
+
+.user-modal h3 {
+  padding: 15px;
+  font-size: 2.5rem;
+}
+
+.user-modal .form-control {
+  height: 35px;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=main.css.map */
