@@ -139,7 +139,12 @@ body,
           align-items: center;
 }
 
-.aboutme .container-aboutme .box {
+.aboutme .container-aboutme .min-width {
+  display: none !important;
+}
+
+.aboutme .container-aboutme .box,
+.aboutme .container-aboutme .min-width {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,7 +161,8 @@ body,
   transition: color 2s, background-color 1s;
 }
 
-.aboutme .container-aboutme .box .content {
+.aboutme .container-aboutme .box .content,
+.aboutme .container-aboutme .min-width .content {
   position: absolute;
   left: 10%;
   top: 20%;
@@ -164,20 +170,24 @@ body,
   text-align: center;
 }
 
-.aboutme .container-aboutme .box .content .btn-main {
+.aboutme .container-aboutme .box .content .btn-main,
+.aboutme .container-aboutme .min-width .content .btn-main {
   font-weight: bold;
   font-style: italic;
   opacity: 0;
 }
 
-.aboutme .container-aboutme .box .content .btn-main span {
+.aboutme .container-aboutme .box .content .btn-main span,
+.aboutme .container-aboutme .min-width .content .btn-main span {
   border-radius: 3px;
   background: -webkit-gradient(linear, left top, right top, from(#c7902b), color-stop(29%, #f1dd2c), color-stop(68%, #f07e49));
   background: linear-gradient(90deg, #c7902b 0%, #f1dd2c 29%, #f07e49 68%);
 }
 
 .aboutme .container-aboutme .box .content h2,
-.aboutme .container-aboutme .box .content i {
+.aboutme .container-aboutme .box .content i,
+.aboutme .container-aboutme .min-width .content h2,
+.aboutme .container-aboutme .min-width .content i {
   position: relative;
   color: #fff;
   text-shadow: -1px 1px 3px black;
@@ -187,23 +197,29 @@ body,
   top: -60px;
 }
 
-.aboutme .container-aboutme .box .content h2 {
+.aboutme .container-aboutme .box .content h2,
+.aboutme .container-aboutme .min-width .content h2 {
   color: Gold;
   text-shadow: -1px 1px 3px black;
   margin-bottom: 2em;
 }
 
-.aboutme .container-aboutme .box:hover {
+.aboutme .container-aboutme .box:hover,
+.aboutme .container-aboutme .min-width:hover {
   color: white;
 }
 
 .aboutme .container-aboutme .box:hover .btn-main,
 .aboutme .container-aboutme .box:hover h2,
-.aboutme .container-aboutme .box:hover i {
+.aboutme .container-aboutme .box:hover i,
+.aboutme .container-aboutme .min-width:hover .btn-main,
+.aboutme .container-aboutme .min-width:hover h2,
+.aboutme .container-aboutme .min-width:hover i {
   opacity: 1;
 }
 
-.aboutme .container-aboutme .box:hover .content-img {
+.aboutme .container-aboutme .box:hover .content-img,
+.aboutme .container-aboutme .min-width:hover .content-img {
   width: 109%;
   height: 109%;
 }
@@ -223,7 +239,8 @@ body,
   transition: width 2s, height 2s;
 }
 
-.aboutme .container-aboutme .box::before {
+.aboutme .container-aboutme .box::before,
+.aboutme .container-aboutme .min-width::before {
   content: '';
   -webkit-filter: url(#vavy);
           filter: url(#vavy);
@@ -238,7 +255,8 @@ body,
   transition: background-color 1.5s, border 1.5s;
 }
 
-.aboutme .container-aboutme .box:hover::before {
+.aboutme .container-aboutme .box:hover::before,
+.aboutme .container-aboutme .min-width:hover::before {
   background-color: rgba(0, 0, 0, 0.745);
   border: 35px ridge #a15716;
 }
@@ -563,7 +581,12 @@ body,
   color: #fff;
 }
 
-.container-web .card {
+.container-web .card-min {
+  display: none !important;
+}
+
+.container-web .card,
+.container-web .card-min {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,7 +611,8 @@ body,
           backdrop-filter: blur(5px);
 }
 
-.container-web .card img {
+.container-web .card img,
+.container-web .card-min img {
   position: absolute;
   left: 0;
   top: 0;
@@ -596,47 +620,56 @@ body,
   height: 100%;
 }
 
-.container-web .card .content-trasform-1 {
+.container-web .card .content-trasform-1,
+.container-web .card-min .content-trasform-1 {
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
 }
 
-.container-web .card .content-trasform-2 {
+.container-web .card .content-trasform-2,
+.container-web .card-min .content-trasform-2 {
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
 }
 
-.container-web .card .content-trasform-3 {
+.container-web .card .content-trasform-3,
+.container-web .card-min .content-trasform-3 {
   -webkit-transform: skew(340deg);
           transform: skew(340deg);
 }
 
-.container-web .card .content-trasform-4 {
+.container-web .card .content-trasform-4,
+.container-web .card-min .content-trasform-4 {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 
-.container-web .card .content-trasform-5 {
+.container-web .card .content-trasform-5,
+.container-web .card-min .content-trasform-5 {
   -webkit-transform: translate(-20%, -20%);
           transform: translate(-20%, -20%);
 }
 
-.container-web .card .content-trasform-6 {
+.container-web .card .content-trasform-6,
+.container-web .card-min .content-trasform-6 {
   -webkit-transform: translate(20%, 20%);
           transform: translate(20%, 20%);
 }
 
-.container-web .card .content-trasform-7 {
+.container-web .card .content-trasform-7,
+.container-web .card-min .content-trasform-7 {
   -webkit-transform: scale(3);
           transform: scale(3);
 }
 
-.container-web .card .content-trasform-8 {
+.container-web .card .content-trasform-8,
+.container-web .card-min .content-trasform-8 {
   -webkit-transform: skew(-340deg);
           transform: skew(-340deg);
 }
 
-.container-web .card .content {
+.container-web .card .content,
+.container-web .card-min .content {
   padding: 7em;
   text-align: center;
   -webkit-transition: 0.5s;
@@ -649,19 +682,22 @@ body,
   background-color: rgba(0, 0, 0, 0.745);
 }
 
-.container-web .card .content:hover {
+.container-web .card .content:hover,
+.container-web .card-min .content:hover {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
 }
 
-.container-web .card .content h4 {
+.container-web .card .content h4,
+.container-web .card-min .content h4 {
   font-size: 1.8rem;
   text-shadow: 0px 0px 5px black;
   z-index: 1;
 }
 
-.container-web .card .content p {
+.container-web .card .content p,
+.container-web .card-min .content p {
   margin-top: 1em;
   font-size: 0.9em;
   font-weight: normal;

@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="../css/animate_components.css" />
 		<link rel="stylesheet" href="../css/main.css" />
 		<link rel="stylesheet" href="../css/media.css" />
-		<link rel="stylesheet" class="light-main" href="../css/light_main.css" />
+		<link rel="stylesheet" class="light-main"  href="../css/light_main.css" />
 	</head>
 	<body>
 
@@ -60,10 +60,13 @@
 		<main>
 			<h2 class="section-tag">Welcome to my Portfolio 😎🙃  </h2>
 			<p class="section-info">Hi, I invite you to look at my portfolio, 😊 I hope you will like it, although it is not a very beautiful portfolio, I mainly wanted to put here my experiences, completed courses 📒 and websites made, so that you have the best knowledge to assess my skills as a future junior front-end developer, thank you and enjoy watching ... </p>
+			<br>
+			<br>
+			<p style=" opacity: .5; font-size: .7em;" class="section-info">**Styles Light / Dark change only on a given subpage, I am working on it so that styles change everywhere .. </p>
 			<section class="aboutme">
 				<div class="container-aboutme" onclick="void(0)">
-					<img src="../img/profilowe.png" onclick="void(0)" alt="Zdjęcie Profilowe" />
-					<div class="box">
+					<img src="../img/profilowe.png" alt="Zdjęcie Profilowe" />
+					<div class="box" onclick="void(0)">
 						<div class="content">
 							<h2>ABOUT ME </h2>
 							<i>
@@ -75,15 +78,33 @@
 								If you want to learn more about me, I encourage you to visit the "About Me" tab or click the button below...😊 
 							</i>
 						
-							<a href="../html/about_me.html">	<button  class="custom-btn btn-main btn-12"><span>Information..  </span><span> Whole.. </span>
-							</button>
-						</a>
-							
-							
+							<a  href="../html/about_me.html">			<button style="position:relative; top:-50px"  class="custom-btn btn-main 			btn-12">	<span>Information..  </span><span> Whole.. </span>
+									</button>
 						
 						</div>
-						<div class="content-img"></div>
+						</a>	
+						<div class="content-img"></div>					
 					</div>
+					<div class="min-width" onclick="void(0)">
+						<div class="content">
+							<h2>ABOUT ME </h2>
+							<i>
+								Hi my name is Michael Rabti I am 22 years old and I am a beginner junior web developer I hope you will enjoy my work. 
+							</i>
+							<br />
+							<br />
+							<i>
+								If you want to learn more about me, I encourage you to visit the "About Me" tab or click the button below...😊 
+							</i>
+						
+							<div style="transform: translateY(-100%);">	<a  href="../html/about_me.html">			<button style="position:relative; top:-50px"  class="custom-btn btn-main 			btn-12">	<span>Information..  </span><span> Whole.. </span>
+							</button>
+					</div>
+						</div>
+						</a>	
+						<div class="content-img"></div>					
+					</div>
+	
 				</div>
 
 				<svg>
@@ -110,6 +131,7 @@
 				</svg>
 			</section>
 		</main>
+
 
 		<div class="footer"></div>
 		<svg>
@@ -139,7 +161,7 @@
 					<h3>You will find me too </h3>
 					<ul>
 						<li>
-							<a
+							<a 
 								target="_blank"
 								class="fb"
 								href="https://www.facebook.com/michael.rabti/"
@@ -186,9 +208,9 @@
 			</div>
 		</div>
 
-		<script type="text/javascript" src="../javascript/vanilla-tilt.js"></script>
+		<script id="vanilla-script"  type="text/javascript"  src="../javascript/vanilla-tilt.js"></script>
 
-		<script src="../javascript/main.js"></script>
+		<script   src="../javascript/main.js"></script>
 		<script>
 			VanillaTilt.init(document.querySelectorAll('.box'), {
 				max: 25,

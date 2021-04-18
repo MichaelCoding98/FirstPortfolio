@@ -140,39 +140,43 @@
 
 @media (max-width: 600px) {
   .aboutme .container-aboutme .box {
+    display: none !important;
+  }
+  .aboutme .container-aboutme .min-width {
+    display: block !important;
     min-width: 360px;
     min-height: 340px;
   }
-  .aboutme .container-aboutme .box .content {
+  .aboutme .container-aboutme .min-width .content {
     margin-top: 1em;
   }
-  .aboutme .container-aboutme .box .content h2 {
+  .aboutme .container-aboutme .min-width .content h2 {
     margin-bottom: 0.5em;
   }
-  .aboutme .container-aboutme .box .content .btn-main {
+  .aboutme .container-aboutme .min-width .content .btn-main {
     position: relative;
     top: -50px;
   }
-  .aboutme .container-aboutme .box .content .btn-main span {
+  .aboutme .container-aboutme .min-width .content .btn-main span {
     width: 100px;
   }
 }
 
 @media (max-width: 400px) {
-  .aboutme .container-aboutme .box {
+  .aboutme .container-aboutme .min-width {
     left: 5%;
     min-width: 240px;
     min-height: 220px;
   }
-  .aboutme .container-aboutme .box .content i {
+  .aboutme .container-aboutme .min-width .content i {
     display: none;
   }
-  .aboutme .container-aboutme .box .content h2 {
+  .aboutme .container-aboutme .min-width .content h2 {
     top: 0;
     font-size: 2rem;
     margin-bottom: 0.5em;
   }
-  .aboutme .container-aboutme .box .btn-main {
+  .aboutme .container-aboutme .min-width .btn-main {
     -webkit-transform: translate(50%, 100%);
             transform: translate(50%, 100%);
   }
@@ -180,7 +184,7 @@
     width: 110%;
     height: 110%;
   }
-  .aboutme .container-aboutme .box:hover .content-img {
+  .aboutme .container-aboutme .min-width:hover .content-img {
     width: 115%;
     height: 115%;
   }
@@ -199,16 +203,22 @@
 
 @media (max-width: 600px) {
   .container-web .card {
+    display: none !important;
+  }
+  .container-web .card-min {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     width: 230px;
     height: 350px;
   }
-  .container-web .card .content h4 {
+  .container-web .card-min .content h4 {
     font-size: 1.3rem;
   }
-  .container-web .card .content h3 {
+  .container-web .card-min .content h3 {
     font-size: 1rem;
   }
-  .container-web .card .content i {
+  .container-web .card-min .content i {
     font-size: 0.8rem;
   }
 }
