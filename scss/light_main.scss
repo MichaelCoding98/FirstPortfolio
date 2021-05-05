@@ -3,7 +3,9 @@
 	background-color:rgb(53, 53, 53) ;
 }
 body,
-.overlay {
+.overlay,html {
+	max-width: 5000px !important;
+	
 	background-image: linear-gradient(
 			158deg,
 			rgba(84, 84, 84, 0.03) 0%,
