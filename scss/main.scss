@@ -9,16 +9,18 @@
 	background-color: rgb(221, 221, 221);
 }
 
-body,html{
+body,
+html {
 	position: relative;
 	max-width: 5000px !important;
-	left: 50%; transform: translateX(-50%);
+	left: 50%;
+	transform: translateX(-50%);
 }
 body,
-.overlay,html {
+.overlay,
+html {
 	width: 100%;
 	overflow-x: hidden !important;
-
 
 	background-image: linear-gradient(
 			323deg,
@@ -147,10 +149,12 @@ body,
 			rgba(57, 57, 57, 0.01) 80%,
 			rgba(57, 57, 57, 0.01) 100%
 		),
-		linear-gradient(90deg, hsl(237, 0%, 13%), hsl(237, 0%, 13%));
+		linear-gradient(90deg, rgb(39, 43, 59), rgb(36, 49, 44));
 	font-family: 'Libre Baskerville', serif;
 }
-
+.container-nav nav ul li a:hover{
+	color: #fff ;
+}
 .light-dark {
 	position: relative;
 	display: flex;
@@ -342,7 +346,7 @@ body,
 	z-index: -2;
 	font-size: 10rem;
 	color: #ffc83d;
-	opacity: 0.04;
+	opacity: 0.1;
 	display: inline-block;
 	i {
 		position: relative;

@@ -221,6 +221,10 @@
   .container-web .card-min .content i {
     font-size: 0.8rem;
   }
+  .container-web .main-website {
+    width: 250px;
+    height: 370px;
+  }
 }
 
 @media (max-width: 800px) {

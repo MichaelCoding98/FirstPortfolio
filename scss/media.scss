@@ -232,6 +232,7 @@
 		.card {
 			display: none !important;
 		}
+	
 		.card-min {
 			display: flex !important;
 			width: 230px;
@@ -247,6 +248,10 @@
 					font-size: 0.8rem;
 				}
 			}
+		}
+		.main-website {
+			width: 250px;
+			height: 370px;
 		}
 	}
 }

@@ -22,59 +22,70 @@ burgerBtn.addEventListener('click', function () {
 navBtn.addEventListener('click', () => {
 	navBtn.classList.toggle('is-active');
 });
+
+
+
+
+let darkMode = localStorage.getItem('darkMode');
+let count = 0;
+
 lightDark.addEventListener('click', () => {
-	lightMain.toggleAttribute('disabled');
-    lightDark.classList.toggle('light-dark-toggle')
+	if (count === 0) {
+		lightDark.classList.add('light-dark-toggle');
+		lightMain.setAttribute('disabled', true);
+		localStorage.setItem('darkMode', 'enabled');
+		count++;
+	}else{
+		lightMain.removeAttribute('disabled');
+		lightDark.classList.remove('light-dark-toggle')
+		localStorage.setItem('darkMode', null);	
+		count = 0;
+	}
 });
+if (darkMode === 'enabled') {
+	lightMain.setAttribute('disabled', true);
+	lightDark.classList.add('light-dark-toggle');
+	count = 1
+}
 
-// const toggleSwitch = document.getElementById('checkbox');
-// const currentTheme = localStorage.getItem('data-theme');
 
-// if (currentTheme) {
-//     document.documentElement.setAttribute('data-theme', currentTheme);
 
-//     if (currentTheme === 'dark') {
-//         toggleSwitch.checked = true;
-//     }
-// }
 
-// function switchTheme(e) {
-//     if (e.target.checked) {
-//         document.documentElement.setAttribute('data-theme', 'dark');
-//         localStorage.setItem('data-theme', 'dark');
-//     } else {
-//         document.documentElement.setAttribute('data-theme', 'light');
-//         localStorage.setItem('data-theme', 'light');
-//     }
-// }
+// // check for saved 'darkMode' in localStorage
+// let darkMode = localStorage.getItem('darkMode');
 
-// toggleSwitch.addEventListener('change', switchTheme, false);
-
-// const lightToggle = document.querySelector('.light-dark');
-// let lightMain = document.querySelector('.light-main');
-// let darkMode = localStorage.getItem('light-main');
+// const darkModeToggle = document.querySelector('#dark-mode-toggle');
 
 // const enableDarkMode = () => {
-// 	lightToggle.classList.add('light-dark-toggle');
-
-// 	localStorage.setItem('darkMode', null);
-
-// };
-
-// const disableDarkMode = () => {
-// 	lightToggle.classList.remove('light-dark-toggle');
-
+// 	// 1. Add the class to the body
+// 	document.body.classList.add('darkmode');
+// 	// 2. Update darkMode in localStorage
 // 	localStorage.setItem('darkMode', 'enabled');
 // };
 
-// lightToggle.addEventListener('click', () => {
+// const disableDarkMode = () => {
+// 	// 1. Remove the class from the body
+// 	document.body.classList.remove('darkmode');
+// 	// 2. Update darkMode in localStorage
+// 	localStorage.setItem('darkMode', null);
+// };
+
+// // If the user already visited and enabled darkMode
+// // start things off with it on
+// if (darkMode === 'enabled') {
+// 	enableDarkMode();
+// }
+
+// // When someone clicks the button
+// darkModeToggle.addEventListener('click', () => {
+// 	// get their darkMode setting
 // 	darkMode = localStorage.getItem('darkMode');
 
-// 	if (darkMode === 'enabled') {
+// 	// if it not current enabled, enable it
+// 	if (darkMode !== 'enabled') {
 // 		enableDarkMode();
-// 		lightMain.setAttribute('disabled', true);
-// 	} else if (darkMode === null) {
+// 		// if it has been enabled, turn it off
+// 	} else {
 // 		disableDarkMode();
-// 		lightMain.setAttribute('disabled', false);
 // 	}
 // });
